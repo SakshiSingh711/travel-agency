@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #5b4d4d;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #042930;
+            padding: 20px 0;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        nav .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffdd00;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFja2dyb3VuZCUyMGZvciUyMHRyYXZlbGxpbmclMjB3ZWJzaXRlfGVufDB8fDB8fHww') no-repeat center center/cover;
+            color: rgb(255, 255, 255);
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .hero h1, .hero p, .hero a {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .hero a {
+            text-decoration: none;
+            background-color: #ffdd00;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero a:hover {
+            background-color: #e3c600;
+        }
+
+        .section {
+            padding: 50px 20px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .about, .destinations, .services, .contact {
+            margin-bottom: 50px;
+        }
+        .about h2, .destinations h2, .services h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #005f73;
+        }
+        .about img {
+            max-width: 100%;
+            
+            
+            margin: 20px ;
+            border-radius: 10px;
+        }
+        .destinations .destination, .services .service {
+            margin-bottom: 20px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .destinations img, .services img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #b7b7b7;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact form button {
+            padding: 10px;
+            border: none;
+            background-color: #006073;
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #003d4c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Travel Agency</div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Explore the World with Us</h1>
+        <p>Your dream vacation is just a click away.</p>
+        <a href="#destinations">Discover Now</a>
+    </div>
+
+    <!-- About Section -->
+    <div class="section about" id="about">
+        <h2>About Us</h2>
+        
+        <p>We are a passionate travel agency dedicated to crafting unforgettable trips to the most beautiful destinations across the globe. Our team ensures every experience is tailored to your desires.</p>
+        
+        <img src="https://images.unsplash.com/photo-1732373870219-ac6444949471?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8RnpvM3p1T0hONnd8fGVufDB8fHx8fA%3D%3Dw"width="300px"alt="About Us">
+        <img src="https://images.unsplash.com/photo-1732951340728-d8b726561d50?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8RnpvM3p1T0hONnd8fGVufDB8fHx8fA%3D%3D" width="300px"alt="About Us">
+        <img src="https://images.unsplash.com/photo-1708344377669-a0e64a7095f9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"width="300px"alt="About Us">
+    </div>
+
+    <!-- Destinations Section -->
+    <div class="section destinations" id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination"> 
+            <h3>Paris, France</h3>
+            <img src="https://plus.unsplash.com/premium_photo-1717346482132-838fef0ebbd1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBhcmlzfGVufDB8fDB8fHww" width ="300"alt="paris">
+            <img src="https://images.unsplash.com/photo-1525218291292-e46d2a90f77c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBhcmlzfGVufDB8fDB8fHww"width ="300"alt="paris">
+            <img src="https://images.unsplash.com/photo-1551634979-2b11f8c946fe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcmlzfGVufDB8fDB8fHww" width ="300px" alt="Paris">
+            <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "width ="300px" alt="Paris">
+            
+
+            <p>Explore the City of Light, from the Eiffel Tower to the Louvre.</p>
+        </div>
+        <div class="destination">
+            <h3>Maldives</h3>
+            
+            <img src="https://images.unsplash.com/photo-1730483940882-14465f1f29d4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fG1hbGRpdmVzfGVufDB8fDB8fHww" width="300px">
+            <img src="https://plus.unsplash.com/premium_photo-1691675471055-2b0fb6d375f2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fG1hbGRpdmVzfGVufDB8fDB8fHww" width="290px">
+            <img src="https://images.unsplash.com/photo-1616524629947-967525666467?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fG1hbGRpdmVzfGVufDB8fDB8fHww"width="245px">
+            <p>Relax in paradise surrounded by crystal clear waters.</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="section services" id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Flight Booking</h3>
+            <p>Seamless flight reservations with the best deals.</p>
+
+        </div>
+        <div class="service">
+            <h3>Hotel Reservations</h3>
+            <p>Comfortable stays tailored to your budget and preferences.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
